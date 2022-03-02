@@ -6,10 +6,10 @@ import (
 )
 
 
-// This is a simple REST API that takes a name and responds with a nickname.
+// This is a simple REST API that responds with a nickname.
 //
-//encore:api public path=/nickname/:name
-func Name(ctx context.Context, name string) (*Response, error) {
+//encore:api public path=/nickname
+func Name(ctx context.Context) (*Response, error) {
 	
 	names := [13]string{"Chief", "Buddy", "Friend", "Ace", "Starlord", "Captain", "Snake",
 	 "Senior", "Junior", "Bud", "Ice", "Mario", "Big"}
